@@ -66,12 +66,12 @@ foreach ($activeParcels as $ap) {
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
             <div class="d-flex align-items-center gap-3">
-                <div class="p-3 rounded-circle bg-warning text-dark">
+                <div class="p-3 rounded-circle text-white shadow-sm" style="background: var(--primary);">
                     <i class="bi bi-bicycle fs-2"></i>
                 </div>
                 <div>
                     <div class="d-flex align-items-center gap-2">
-                        <span class="badge bg-warning text-dark font-monospace fw-bold">COURIER DISPATCH TERMINAL</span>
+                        <span class="badge bg-success-subtle text-success font-monospace fw-bold">COURIER DISPATCH TERMINAL</span>
                         <span class="badge bg-success-subtle text-success border border-success-subtle">
                             <i class="bi bi-broadcast me-1"></i> GPS Active
                         </span>
@@ -83,7 +83,7 @@ foreach ($activeParcels as $ap) {
 
             <!-- Quick Action: Launch Camera QR Scanner -->
             <div class="d-flex align-items-center gap-2">
-                <button type="button" class="btn btn-warning fw-bold px-4 py-2 d-flex align-items-center gap-2 shadow" id="btnOpenDriverQr">
+                <button type="button" class="btn btn-express fw-bold px-4 py-2 d-flex align-items-center gap-2 shadow" id="btnOpenDriverQr">
                     <i class="bi bi-camera-fill fs-5"></i>
                     <span>Scan Waybill QR</span>
                 </button>
@@ -246,7 +246,7 @@ foreach ($activeParcels as $ap) {
 
                                     <!-- Action Buttons -->
                                     <div class="d-flex gap-2 pt-3 border-top">
-                                        <button type="button" class="btn btn-warning btn-sm w-100 fw-bold py-2 btn-open-pod shadow-sm"
+                                        <button type="button" class="btn btn-express btn-sm w-100 fw-bold py-2 btn-open-pod shadow-sm"
                                                 data-id="<?php echo $p['id']; ?>"
                                                 data-tracking="<?php echo htmlspecialchars($p['tracking_number']); ?>"
                                                 data-receiver="<?php echo htmlspecialchars($p['receiver_name']); ?>"

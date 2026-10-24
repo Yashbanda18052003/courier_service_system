@@ -71,12 +71,12 @@ foreach ($inHubParcels as $p) {
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
             <div class="d-flex align-items-center gap-3">
-                <div class="p-3 rounded-circle bg-warning text-dark">
+                <div class="p-3 rounded-circle text-white shadow-sm" style="background: var(--primary);">
                     <i class="bi bi-building fs-2"></i>
                 </div>
                 <div>
                     <div class="d-flex align-items-center gap-2">
-                        <span class="badge bg-warning text-dark font-monospace fw-bold">WAREHOUSE SORTING DEPOT</span>
+                        <span class="badge bg-success-subtle text-success font-monospace fw-bold">WAREHOUSE SORTING DEPOT</span>
                         <span class="badge bg-secondary font-monospace"><?php echo htmlspecialchars($myHub['hub_code']); ?></span>
                     </div>
                     <h2 class="fw-extrabold text-white mb-0 mt-1"><?php echo htmlspecialchars($myHub['hub_name']); ?></h2>
@@ -86,7 +86,7 @@ foreach ($inHubParcels as $p) {
 
             <!-- Rapid Batch Camera Scanner Trigger -->
             <div class="d-flex align-items-center gap-2">
-                <button type="button" class="btn btn-warning fw-bold px-4 py-2 d-flex align-items-center gap-2 shadow" id="btnLaunchHubScanner">
+                <button type="button" class="btn btn-express fw-bold px-4 py-2 d-flex align-items-center gap-2 shadow" id="btnLaunchHubScanner">
                     <i class="bi bi-qr-code-scan fs-5"></i>
                     <span>Launch Rapid Batch Scanner</span>
                 </button>

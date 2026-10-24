@@ -156,10 +156,13 @@ function performTrack(trackingCode) {
         </div>
     `);
 
-    // Smooth scroll to results
-    $('html, body').animate({
-        scrollTop: $resultSection.offset().top - 80
-    }, 400);
+    // Smooth scroll to results (skip if noscroll is requested)
+    const currentParams = new URLSearchParams(window.location.search);
+    if (!currentParams.has('noscroll') && currentParams.get('scroll') !== '0') {
+        $('html, body').animate({
+            scrollTop: $resultSection.offset().top - 80
+        }, 400);
+    }
 
     $.ajax({
         url: BASE_URL + 'ajax/parcel_handler.php',

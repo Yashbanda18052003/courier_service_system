@@ -54,7 +54,7 @@ $parcels = $parcelsStmt->fetchAll();
         <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
             <div>
                 <div class="d-flex align-items-center gap-2">
-                    <span class="badge bg-warning text-dark fw-bold px-2 py-1 rounded-pill">Customer Portal</span>
+                    <span class="badge bg-success-subtle text-success fw-bold px-2 py-1 rounded-pill">Customer Portal</span>
                     <span class="text-muted small">Account ID #<?php echo htmlspecialchars($userId); ?></span>
                 </div>
                 <h2 class="fw-extrabold text-dark mb-0 mt-1">
@@ -142,7 +142,7 @@ $parcels = $parcelsStmt->fetchAll();
         <div class="card-header bg-white py-3 border-bottom d-flex flex-wrap align-items-center justify-content-between gap-2">
             <div>
                 <h5 class="fw-bold text-dark mb-0">
-                    <i class="bi bi-boxes text-warning me-2"></i> My Consignments & Waybills
+                    <i class="bi bi-boxes me-2" style="color: var(--primary);"></i> My Consignments & Waybills
                 </h5>
                 <small class="text-muted">Real-time status, recipient OTPs, and printable QR waybills</small>
             </div>
@@ -241,7 +241,7 @@ $parcels = $parcelsStmt->fetchAll();
 
                                     <!-- Delivery OTP (Sender has secret OTP to share with recipient) -->
                                     <td class="text-center">
-                                        <span class="badge bg-dark font-monospace text-warning px-3 py-2 fs-6 shadow-sm" title="Share this code with the recipient for doorstep verification">
+                                        <span class="badge bg-dark font-monospace px-3 py-2 fs-6 shadow-sm" style="color: var(--primary); border: 1px solid rgba(16, 185, 129, 0.4);" title="Share this code with the recipient for doorstep verification">
                                             <?php echo htmlspecialchars($p['delivery_otp']); ?>
                                         </span>
                                         <div class="text-muted" style="font-size: 0.65rem;">Share with Recipient</div>

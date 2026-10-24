@@ -95,12 +95,12 @@ $users = $usersStmt->fetchAll();
     <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
             <div class="d-flex align-items-center gap-3">
-                <div class="p-3 rounded-circle bg-danger text-white">
+                <div class="p-3 rounded-circle text-white shadow" style="background: var(--primary);">
                     <i class="bi bi-shield-check fs-2"></i>
                 </div>
                 <div>
                     <div class="d-flex align-items-center gap-2">
-                        <span class="badge bg-danger text-white font-monospace fw-bold">ROOT COMMAND CENTER</span>
+                        <span class="badge bg-success-subtle text-success border border-success-subtle font-monospace fw-bold">ROOT COMMAND CENTER</span>
                         <span class="badge bg-success-subtle text-success border border-success-subtle">
                             <span class="p-1 rounded-circle bg-success me-1"></span> Live Network Active
                         </span>
@@ -112,7 +112,7 @@ $users = $usersStmt->fetchAll();
 
             <!-- Quick Action Buttons -->
             <div class="d-flex align-items-center gap-2">
-                <button type="button" class="btn btn-warning fw-bold px-3 py-2 shadow-sm d-flex align-items-center gap-1" data-bs-toggle="modal" data-bs-target="#createHubModal">
+                <button type="button" class="btn btn-express fw-bold px-3 py-2 shadow-sm d-flex align-items-center gap-1" data-bs-toggle="modal" data-bs-target="#createHubModal">
                     <i class="bi bi-building-add"></i>
                     <span>+ New Hub</span>
                 </button>

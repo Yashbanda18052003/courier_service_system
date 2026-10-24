@@ -41,7 +41,7 @@ $prevSender = $prevSenderStmt->fetch() ?: [];
                     </ol>
                 </nav>
                 <h3 class="fw-extrabold text-dark mb-0">
-                    <i class="bi bi-box-seam-fill text-warning me-2"></i> Book Parcel & Dynamic Rate Calculator
+                    <i class="bi bi-box-seam-fill me-2" style="color: var(--primary);"></i> Book Parcel & Dynamic Rate Calculator
                 </h3>
                 <p class="text-muted small mb-0">Schedule doorstep courier pickup, route across hubs, and generate scannable QR waybill.</p>
             </div>
@@ -282,7 +282,7 @@ $prevSender = $prevSenderStmt->fetch() ?: [];
                     <div class="card-header bg-white py-3 border-bottom">
                         <div class="d-flex align-items-center justify-content-between">
                             <h5 class="fw-bold mb-0 text-dark">
-                                <i class="bi bi-calculator text-warning me-1"></i> Live Price Breakdown
+                                <i class="bi bi-calculator me-1" style="color: var(--primary);"></i> Live Price Breakdown
                             </h5>
                             <span class="badge bg-light text-muted border" id="calcStatus">Updated</span>
                         </div>
@@ -290,9 +290,9 @@ $prevSender = $prevSenderStmt->fetch() ?: [];
 
                     <div class="card-body p-4">
                         <!-- Big Total Banner -->
-                        <div class="p-3 rounded-3 text-center mb-4" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff;">
+                        <div class="p-3 rounded-3 text-center mb-4" style="background: linear-gradient(135deg, #0b0f19 0%, #111827 100%); color: #ffffff; border: 1px solid rgba(16, 185, 129, 0.3);">
                             <div class="small text-light opacity-75 text-uppercase fw-bold letter-spacing-1">Estimated Shipping Total</div>
-                            <div class="display-5 fw-extrabold text-warning my-1 font-monospace" id="displayTotalAmount">$58.25</div>
+                            <div class="display-5 fw-extrabold my-1 font-monospace" style="color: var(--primary);" id="displayTotalAmount">$58.25</div>
                             <div class="small text-light opacity-75" id="displayEstDays">
                                 <i class="bi bi-clock-history me-1"></i> 2 - 3 Business Days
                             </div>

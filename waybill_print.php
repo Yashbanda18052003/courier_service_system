@@ -11,7 +11,7 @@ if (!defined('BASE_URL')) {
     define('BASE_URL', '/courier_service_system/');
 }
 
-$trackingNumber = trim($_GET['code'] ?? $_GET['tracking'] ?? '');
+$trackingNumber = trim($_GET['code'] ?? $_GET['tracking'] ?? $_GET['tracking_number'] ?? '');
 $parcelId       = (int)($_GET['parcel_id'] ?? 0);
 
 $pdo = getDB();
